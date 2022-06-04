@@ -1,6 +1,7 @@
 site_name: Fix it all
 
 repo_url: https://github.com/stkr22/wiki-fix-it-all
+edit_uri: edit/main/docs/
 
 theme:
   name: material
