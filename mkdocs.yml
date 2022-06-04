@@ -1,0 +1,41 @@
+site_name: Fix it all
+
+repo_url: https://github.com/stkr22/wiki-fix-it-all
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate 
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.keys
+
+plugins:
+  - search
+  - git-revision-date-localized
