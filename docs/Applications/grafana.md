@@ -39,3 +39,17 @@ BETWEEN '2022-02-28T23:00:00Z' AND '2022-03-31T21:59:59.999Z'
 Sources:
 
 - <https://github.com/grafana/grafana/issues/13769>
+
+## Provision dashboards with folder structure
+
+Sources:
+
+- <https://grafana.com/docs/grafana/latest/administration/provisioning/>
+- <https://github.com/ezienecker/grafana-sidecar-folder-sample>
+- <https://github.com/prometheus-community/helm-charts/issues/336#issuecomment-745569146>
+
+## Provisiong dashboards with secrets
+
+Sources:
+
+- <https://grafana.com/docs/grafana/latest/administration/provisioning/>

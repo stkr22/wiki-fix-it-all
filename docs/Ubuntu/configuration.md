@@ -317,30 +317,6 @@ Sources:
 
 - <https://serverfault.com/questions/82857/prevent-duplicate-cron-jobs-running>
 
-### Why my script does not work or works in shell but not as cron?
-
-Possibly the problem could be the environment, apparently cron runs in a minimal environment and that leads to the problems.
-
-Solution is to insert the following line in crontab:
-
-```conf
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
-Alternatively directly in the script:
-
-``` bash
-#!/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:{{ PATH_TO_SCRIPT }}
-```
-
-Sources:
-
-- <https://stackoverflow.com/questions/2229825/where-can-i-set-environment-variables-that-crontab-will-use>
-- <https://serverfault.com/questions/337631/crontab-execution-doesnt-have-the-same-environment-variables-as-executing-user>
-- <https://unix.stackexchange.com/questions/27289/how-can-i-run-a-cron-command-with-existing-environmental-variables>
-- <https://askubuntu.com/questions/117978/script-doesnt-run-via-crontab-but-works-fine-standalone>
-
 ## Firmware, Kernel and GRUB
 
 ### How does the GRUB menu work?
@@ -428,3 +404,10 @@ Sources:
 
 - <https://askubuntu.com/questions/26054/how-to-restart-wifi-interface-without-rebooting-it-drops-connection>
 - <https://wireless.wiki.kernel.org/en/users/drivers/ath10k/debug#firmware_version>
+
+
+## How to deal with packages have been kept back in apt?
+
+Sources:
+
+- <https://askubuntu.com/questions/601/the-following-packages-have-been-kept-back-why-and-how-do-i-solve-it>

@@ -181,3 +181,29 @@ for finding the printer I had to disable ufw once and enable it again
 Sources:
 
 - <https://developers.hp.com/hp-linux-imaging-and-printing/>
+
+## Cron
+
+### Why my script does not work or works in shell but not as cron?
+
+Possibly the problem could be the environment, apparently cron runs in a minimal environment and that leads to the problems.
+
+Solution is to insert the following line in crontab:
+
+```conf
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+Alternatively directly in the script:
+
+``` bash
+#!/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:{{ PATH_TO_SCRIPT }}
+```
+
+Sources:
+
+- <https://stackoverflow.com/questions/2229825/where-can-i-set-environment-variables-that-crontab-will-use>
+- <https://serverfault.com/questions/337631/crontab-execution-doesnt-have-the-same-environment-variables-as-executing-user>
+- <https://unix.stackexchange.com/questions/27289/how-can-i-run-a-cron-command-with-existing-environmental-variables>
+- <https://askubuntu.com/questions/117978/script-doesnt-run-via-crontab-but-works-fine-standalone>
