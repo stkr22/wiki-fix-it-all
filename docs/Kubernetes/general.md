@@ -76,7 +76,6 @@ Sources:
 - <https://github.com/kubernetes/kubernetes/issues/39084>
 - <https://stackoverflow.com/questions/59473707/kubenetes-pod-delete-with-pattern-match-or-wilcard>
 
-
 ## Label a node and node affinity
 
 To make sure a Pod is always scheduled on a specific node one can use label:
@@ -102,3 +101,14 @@ Sources:
 
 - <https://nikdoof.com/posts/2021/zigbee2mqtt-on-kubernetes/>
 
+## How to control CronJob retries
+
+backoffLimit means the number of times it will retry before it is considered failed. The default is 6.
+
+concurrencyPolicy set to Forbid means it will run 0 or 1 times, but not more.
+
+restartPolicy set to Never means it won't restart on failure.
+
+Sources:
+
+- <https://stackoverflow.com/questions/51657105/how-to-ensure-kubernetes-cronjob-does-not-restart-on-failure>
