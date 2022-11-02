@@ -1,5 +1,15 @@
 # Ubuntu Troubleshooting
 
+## Apt-get Packages have been kept back.
+
+Sources:
+
+``` bash
+sudo apt-get --with-new-pkgs upgrade
+```
+
+- <https://askubuntu.com/questions/601/the-following-packages-have-been-kept-back-why-and-how-do-i-solve-it>
+
 ## Raspi ubuntu server - usb boot
 
 Don't use Ubuntu server > 21.04 for usb boot
