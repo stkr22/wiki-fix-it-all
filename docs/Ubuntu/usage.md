@@ -112,3 +112,15 @@ Sources:
 Sources:
 
 - <https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files>
+
+## Securely erase ssds
+
+```bash
+sudo hdparm -I /dev/sdX | grep -i erase
+```
+
+Soures:
+
+- <https://askubuntu.com/questions/794612/how-to-securely-wipe-files-from-ssd-drive#795756>
+- <https://www.thomas-krenn.com/en/wiki/Perform_a_SSD_Secure_Erase>
+- <https://9to5tutorial.com/secure-erase-ssd-in-ubuntu>

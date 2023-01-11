@@ -8,6 +8,14 @@ Sources:
 
 - <https://askubuntu.com/questions/978300/how-do-i-set-environment-variable-for-all-users-even-when-doing-sudo-su>
 
+## How do I reverse search my commands?
+
+CTRL + R
+
+Sources:
+
+- <https://unix.stackexchange.com/questions/73498/how-to-cycle-through-reverse-i-search-in-bash>
+
 ## How do I use if in bash?
 
 ``` bash
