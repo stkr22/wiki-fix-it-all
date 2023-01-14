@@ -17,7 +17,7 @@ k3sup install --ip {{ HOST_IP }} \
   --user {{ SSH_USER }} \
   --merge \
   --local-path ~/.kube/config --context {{ CONTEXT NAME }} \
-  --k3s-version 1.25.5+k3s2 \
+  --k3s-version v1.25.5+k3s2 \
   --k3s-extra-args '--disable local-storage --disable servicelb --disable traefik --flannel-backend wireguard-native'
 ```
 
@@ -28,7 +28,7 @@ k3sup join --ip {{ HOST_IP }} \
   --user {{ SSH_USER }} \
   --server-ip {{ SERVER_IP }}
   --server-user {{ SERVER_SSH_USER }}
-  --k3s-version 1.25.5+k3s2 
+  --k3s-version v1.25.5+k3s2 
 ```
 
 Einzelnachweise:
