@@ -18,7 +18,7 @@ k3sup install --ip {{ HOST_IP }} \
   --merge \
   --local-path ~/.kube/config --context {{ CONTEXT NAME }} \
   --k3s-version v1.22.7+k3s1 \
-  --k3s-extra-args '--disable local-storage --disable servicelb --disable traefik --flannel-backend wireguard'
+  --k3s-extra-args '--disable local-storage --disable servicelb --disable traefik --flannel-backend wireguard-native'
 ```
 
 Join new node:
