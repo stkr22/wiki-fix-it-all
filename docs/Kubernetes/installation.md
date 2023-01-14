@@ -26,8 +26,8 @@ Join new node:
 ``` bash
 k3sup join --ip {{ HOST_IP }} \
   --user {{ SSH_USER }} \
-  --server-ip {{ SERVER_IP }}
-  --server-user {{ SERVER_SSH_USER }}
+  --server-ip {{ SERVER_IP }} \
+  --server-user {{ SERVER_SSH_USER }} \
   --k3s-version v1.25.5+k3s2 
 ```
 
